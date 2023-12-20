@@ -1,1 +1,1 @@
-[{"templateName":"tauri-apply","templateUrl":"https://github.com/zsmortal/tauri-apply.git","desc":"基于tauri+vite开发的桌面端应用"}]
+[{"templateName":"tauri-apply","templateUrl":"https://github.com/zsmortal/tauri-apply.git","desc":"基于tauri+vite开发的桌面端应用"},{"templateName":"web-apply","templateUrl":"https://github.com/zsmortal/web-apply.git","desc":"基于element-plus+vite开发的web端应用"}]

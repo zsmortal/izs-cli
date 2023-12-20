@@ -3,6 +3,7 @@ import { program } from 'commander' // 命令行工具
 import { version, description, handleVersion } from '../lib/version/index.js'
 import { handleTemplate } from '../lib/template/index.js'
 import { createProject } from '../lib/create/index.js'
+import { handleServer } from '../lib/server/index.js'
 
 // 配置使用方法
 program.usage('<command> [options]')
@@ -28,8 +29,15 @@ program
 program
   .command('create <projectName>')
   .alias('c')
-  .description('创建项目')
+  .description('create project')
   .action((appName) => createProject(appName))
+
+// 服务器相关操作
+program
+  .command('server [command]')
+  .alias('s')
+  .description('server related operations')
+  .action(() => handleServer())
 
 // 解析命令行参数
 program.parse(process.argv)
