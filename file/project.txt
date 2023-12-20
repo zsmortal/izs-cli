@@ -1,0 +1,1 @@
+[{"projectName":"parking-lot","desc":"浙建停车场项目","localDir":"dist","remoteDir":"/web/parking-lot/dist","host":"192.168.1.175"},{"projectName":"gonghui-cloud-admin","desc":"工汇云","localDir":"dist","remoteDir":"/web/gonghui-cloud-admin/dist","host":"192.168.1.175"}]

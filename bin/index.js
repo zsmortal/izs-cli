@@ -4,6 +4,7 @@ import { version, description, handleVersion } from '../lib/version/index.js'
 import { handleTemplate } from '../lib/template/index.js'
 import { createProject } from '../lib/create/index.js'
 import { handleServer } from '../lib/server/index.js'
+import { handleProject } from '../lib/project/index.js'
 
 // 配置使用方法
 program.usage('<command> [options]')
@@ -38,6 +39,13 @@ program
   .alias('s')
   .description('server related operations')
   .action(() => handleServer())
+
+// 项目相关操作
+program
+  .command('project [command]')
+  .alias('p')
+  .description('project related operations')
+  .action(() => handleProject())
 
 // 解析命令行参数
 program.parse(process.argv)
