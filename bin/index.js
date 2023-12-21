@@ -5,6 +5,7 @@ import { handleTemplate } from '../lib/template/index.js'
 import { createProject } from '../lib/create/index.js'
 import { handleServer } from '../lib/server/index.js'
 import { handleProject } from '../lib/project/index.js'
+import { publishProject } from '../lib/publish/index.js'
 
 // 配置使用方法
 program.usage('<command> [options]')
@@ -46,6 +47,12 @@ program
   .alias('p')
   .description('project related operations')
   .action(() => handleProject())
+
+// 部署项目
+program
+  .command('publish [command]')
+  .description('publish project')
+  .action(() => publishProject())
 
 // 解析命令行参数
 program.parse(process.argv)
