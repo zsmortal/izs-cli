@@ -30,20 +30,11 @@ export const getFileContent = (pathStr) => {
 }
 
 /**
- * 获取当前操作目录
- * @param {string} name 文件名称
- * @returns String
- */
-export const getNowPath = (name) => {
-  return `${process.cwd()}/${name}`
-}
-
-/**
  * 检查当前操作目录文件是否存在
  * @param {string} name 文件名称
  * @returns Boolean
  */
 export const isFileExisted = (name) => {
-  if (fs.existsSync(getNowPath(name))) return true
+  if (fs.existsSync(`${process.cwd()}/${name}`)) return true
   return false
 }
