@@ -2,6 +2,10 @@
   "name": "izs-cli",
   "version": "1.0.0",
   "type": "module",
+  "description": "Your favorite front-end scaffolding tool",
+  "author": "zsmortal",
+  "license": "ISC",
+  "repository": "https://github.com/zsmortal/izs-cli.git",
   "main": "./bin/index.js",
   "bin": {
     "izs": "./bin/index.js",
@@ -27,12 +31,9 @@
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-prettier": "^5.1.2",
     "prettier": "^3.1.1"
   },
-  "description": "Your favorite front-end scaffolding tool",
-  "author": "xxx",
-  "license": "ISC",
   "engines": {
     "node": ">=16.14.0"
   }
